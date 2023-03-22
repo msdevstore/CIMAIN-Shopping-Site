@@ -1,0 +1,33 @@
+.errorpage{background-color: #eb6161;height: 100vh;padding: 80px;}
+.inner_error{width: 100%;height: 100%;text-align: center;background: radial-gradient(ellipse at center, rgba(235,96,96,0.47) 0%, rgba(255,255,255,0.47) 0%, rgba(235,96,96,1) 100%);box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.26);}
+.inner_error .inner_data{position: absolute;left: 50%;top: 50%;transform: translateX(-50%) translateY(-50%);}
+.inner_data h2{color: #fff;font-weight: bold;font-size: 120px;line-height: 100px;letter-spacing: 6px;margin: 20px 0 30px;position: relative;}
+.inner_data h2:after,.inner_data h2:before{content: '';position: absolute;left: -80%;top: 50%;width: 80%;height: 1px;background-color: #ddd;}
+.inner_data h2:before{left: inherit;right: -80%;}
+.inner_data p{font-size: 24px;color: #333;font-weight: 600;}
+.inner_data .button{border-radius: 5px;margin-bottom: 50px;}
+
+
+/*========================
+	Media Query CSS
+==========================*/
+@media screen and (min-width: 992px) and (max-width: 1200px)
+{
+.inner_data h2:after,.inner_data h2:before{width: 40%;left: -40%;}
+.inner_data h2:before{right: -40%;left: inherit;}
+.inner_data h2{font-size: 80px;line-height: 70px;margin: 10px 0;}
+.inner_error .button{margin-bottom: 10px;}
+.inner_error .social li{padding: 2px;}
+}
+@media screen and (min-width: 0) and (max-width: 991px)
+{
+.errorpage{padding: 30px;}
+.error{height: calc;padding: 50px;}
+.inner_data h2:after,.inner_data h2:before{display: none;}
+.inner_data h2{font-size: 60px;line-height: 50px;margin: 10px 0;}
+.inner_data p{font-size: 16px;}
+.inner_error .inner_data{width: 100%;padding: 10px;}
+.inner_error .button{margin-bottom: 10px;}
+.inner_error .social li{padding: 2px;}
+}
+

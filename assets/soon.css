@@ -1,0 +1,38 @@
+.commingpage{height: 100vh;background-color: #eb6161;padding: 80px;}
+.soonbox{background-image: url('images/1920x1080.PNG');background-position: center bottom;box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.26);width: 100%;height: 100%;text-align: center;position: relative;overflow: hidden;}
+.soonbox .overlay{opacity: 1;visibility: visible;position: absolute;}
+.soonbox h2{margin: 10px 0 30px;font-size: 50px;color: #fff;}
+.soonbox #clockdiv li{display: inline-block;text-align: center;border-right: 1px solid #ddd;padding: 20px 30px;}
+.soonbox #clockdiv li:last-child{border-right: none;}
+.soonbox #clockdiv li label{display: block;font-size: 50px;color: #fff;padding-bottom: 20px;font-weight: 400;}
+.soonbox #clockdiv li span{font-size: 20px;color: #fff;}
+.soonbox p{color: #fff;padding: 20px 0;}
+.soonbox .soondata{z-index: 999;position: absolute;left: 50%;top: 50%;transform: translateX(-50%) translateY(-50%);}
+.soonbox .soondata p:last-child{margin-bottom: 0;}
+
+
+/*========================
+	Media Query CSS
+==========================*/
+@media screen and (min-width: 992px) and (max-width: 1250px)
+{
+.commingpage{padding: 60px;}
+.soonbox h2{font-size: 24px;margin-top: 0;margin-bottom: 10px;line-height: 30px;}
+.soonbox #clockdiv li{padding: 10px 5px;}
+.soonbox #clockdiv li label{font-size: 20px;padding-bottom: 0;}
+.soonbox #clockdiv li span{font-size: 14px;}
+.soonbox p{padding-bottom: 0;margin-bottom: 10px;}
+.soonbox .soondata{width: 100%;padding: 10px;}
+}
+@media screen and (min-width: 0) and (max-width: 991px)
+{
+.commingpage{padding: 20px;}
+.soonbox h2{font-size: 24px;margin-top: 0;margin-bottom: 10px;line-height: 30px;}
+.soonbox #clockdiv li{padding: 10px 5px;}
+.soonbox #clockdiv li label{font-size: 20px;padding-bottom: 0;}
+.soonbox #clockdiv li span{font-size: 14px;}
+.soonbox p{padding-bottom: 0;margin-bottom: 10px;}
+.soonbox .soondata{width: 100%;padding: 10px;}
+
+
+}
